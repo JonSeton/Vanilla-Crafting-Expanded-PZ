@@ -1,0 +1,91 @@
+version=1
+id=2445543783
+title=Vanilla Crafting Expanded [B41.5]
+description=recipe Make Handle
+description=  {
+description=     Log/ChairLeg/TableLeg,
+description=     keep Saw/GardenSaw,
+description=     keep HuntingKnife/KitchenKnife/FlintKnife/Machete,
+description=
+description=     Result:Handle,
+description=     Sound:Sawing,
+description=     Time:200.0,
+description=     Category:Carpentry,
+description=     SkillRequired:Woodwork=3,
+description=     OnGiveXP:Recipe.OnGiveXP.WoodWork10,
+description=  }
+description=
+description=[h1]Description: [/h1]
+description=Adds additional recipes to help with crafting many of the items used in Project Zomboid without making the recipes overpowered.
+description=
+description=Built for Build 41 of Project Zomboid.
+description=
+description=[h1]Recipes: [/h1]
+description=
+description=[h3]General: [/h3]
+description=Variety of Items + Paint Bucket of Water = Different Colors of Paint (Check crafting recipes in game)
+description=10 Stone + Hammer + Mortar & Pestle = ConcretePowder or PlasterPowder
+description=
+description=[h3]Carpentry: [/h3]
+description=Mop/Broom/Poolcue/Chair Leg/Table Leg/Rake + Knife = Wooden Spear
+description=Carpentry[3] + Log/Chair Leg/Table Leg + Saw + Knife = Handle
+description=Carpentry[4] + Log + Saw = Baseball Bat
+description=
+description=[h3]Trapping: [/h3]
+description=Plank + 5 Paperclips + 2 Nails + Hammer = Mouse Trap
+description=
+description=Tree Branch or Plank + 4 Paperclips + 2 Nails + Rope + Hammer = Snare Trap
+description=Tree Branch or Plank + 4 Paperclips + 2 Nails + 4 Twine + Hammer = Snare Trap
+description=
+description=[h3]Tailoring: [/h3]
+description=Holster + 5 Thread + Scissors + Needle + Knife = Double Holster
+description=10 Leather Strips + 5 Thread + Scissors + Needle + Knife = Sling
+description=
+description=[h3]Metalworking: [/h3]
+description=Empty Tin Can  + Hammer = Unusable Metal
+description=Pop Can + Hammer = Unusable Metal
+description=Fork + Hammer = Unusable Metal
+description=Spoon + Hammer = Unusable Metal
+description=Dogtags + Hammer = Unusable Metal
+description=Empty Paint Bucket + Hammer = 3 Unusable Metal
+description=Flute + Hammer = 3 Unusable Metal
+description=
+description=Wire + Saw = Welding Rods
+description=Unusable Metal + Hammer + Saw = Welding Rods
+description=
+description=Wire + Knife = Barbed Wire
+description=
+description=5 Unusable Metal + BlowTorch + Hammer = 50 Nails
+description=5 Unusable Metals + BlowTorch + Scissors + Hamer = Wire
+description=
+description=Metalworking[1] + 4 Unusable Metal + Blowtorch + Hammer  = Metal Pipe
+description=Metalworking[2] + 1 Unusable Metal + 1 Handle + Blowtorch + Hammer = Kitchen Knife
+description=Metalworking[2] + 2 Unusable Metal + 1 Handle + Blowtorch + Hammer = Hammer
+description=Metalworking[2] + 4 Unusable Metal + Blowtorch + Hammer  = Metal Bar
+description=Metalworking[2] + 4 Unusable Metal + 2 Handles + Blowtorch + Hammer = Pipe Wrench
+description=Metalworking[3] + 3 Unusable Metal + 1 Handle + Blowtorch + Hammer = Hand Axe
+description=Metalworking[4] + 3 Unusable Metal + 2 Handles + Blowtorch + Hammer = Garden Hoe
+description=Metalworking[4] + 3 Unusable Metal + Blowtorch + Hammer = Crowbar
+description=Metalworking[4] + 3 Unusable Metal + 1 Handle + Blowtorch + Hammer = Cleaver
+description=Metalworking[5] + 4 Unusable Metal + 2 Handles + Blowtorch + Hammer = Shovel
+description=Metalworking[5] + 2 Unusable Metal + 1 Handle + Blowtorch + Hammer = Hunting Knife
+description=Metalworking[6] + 4 Unusable Metal + 1 Handle + Blowtorch + Hammer = Machete
+description=Metalworking[6] + 3 Unusable Metal + 2 Handles + Blowtorch + Hammer = Axe
+description=Metalworking[8] + 10 Unusable Metal + 2 Handles + Blowtorch + Hammer = Sledgehammer
+description=Metalworking[9] + 8 Unusable Metal + 1 Handle + Blowtorch + Hammer = Katana
+description=
+description=[h1]Known Bugs:[/h1]
+description=No known bugs currently, please report in comments.
+description=
+description=[h1]Supported Languages: [/h1]
+description=English - interested in other languages please comment!
+description=
+description=[img]https://steamuserimages-a.akamaihd.net/ugc/1660101375273576639/0C12E325C464F5DC166E5FF2AB70A43581BED64F/[/img]
+description=
+description=[h2]Mod Info:  [/h2]
+description=Tags:B41,Multiplayer,Realistic
+description=
+description=Workshop ID: 2445543783
+description=Mod ID: VCE
+tags=Build 41;Balance;Misc;Multiplayer;Realistic;Weapons
+visibility=public

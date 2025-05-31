@@ -1,0 +1,684 @@
+module VanillaCraftingExpanded
+{
+  imports
+  {
+    Base
+  }
+  recipe Create Mouse Trap
+  {
+     Plank,
+     Paperclip=5,
+     Nails=2,
+     keep [Recipe.GetItemTypes.Hammer],
+
+	   Result:TrapMouse,
+     Sound:Hammering,
+     SkillRequired:Woodwork = 1,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Snare Trap
+  {
+     Plank,
+     Paperclip=4,
+     Nails=2,
+     Rope,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:TrapSnare,
+     Sound:Hammering,
+     SkillRequired:Woodwork=3;Trapping=2;,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Snare Trap
+  {
+     TreeBranch,
+     Paperclip=4,
+     Nails=2,
+     Rope,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:TrapSnare,
+     SkillRequired:Woodwork=3;Trapping=2;,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Snare Trap
+  {
+     Plank,
+     Paperclip=4,
+     Nails=2,
+     Twine=5,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:TrapSnare,
+     SkillRequired:Woodwork=3;Trapping=3;,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Snare Trap
+  {
+     TreeBranch,
+     Paperclip=4,
+     Nails=2,
+     Twine=5,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:TrapSnare,
+     SkillRequired:Woodwork=3;Trapping=3;,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Welding Rods
+  {
+     UnusableMetal=5,
+     keep [Recipe.GetItemTypes.Hammer],
+     keep [Recipe.GetItemTypes.Saw],
+
+     Result:WeldingRods,
+     SkillRequired:MetalWelding=2,
+     Sound:Hammering,
+     Time:200.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Welding Rods
+  {
+     Wire,
+     keep [Recipe.GetItemTypes.Saw],
+
+     Result:WeldingRods,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Unusable Metal
+  {
+     TinCanEmpty/PopEmpty/Fork/Spoon/Necklace_DogTag,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:UnusableMetal,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Unusable Metal
+  {
+     PaintbucketEmpty,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:UnusableMetal=3,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Unusable Metal
+  {
+     Flute,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:UnusableMetal=3,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Barbed Wire
+  {
+     Wire,
+     keep HuntingKnife/KitchenKnife/FlintKnife/Machete,
+
+     Result:BarbedWire,
+     SkillRequired:MetalWelding=2,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Nails
+  {
+     UnusableMetal = 5,
+     keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:Nails= 10,
+     SkillRequired:MetalWelding=5,
+     Sound:Hammering,
+     Time:1000.0,
+     Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Create Wire
+  {
+     UnusableMetal = 5,
+     keep BlowTorch,
+     keep Scissors,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:Wire,
+     SkillRequired:MetalWelding=6,
+     Sound:Hammering,
+     Time:1000.0,
+     Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Create Sling
+  {
+     LeatherStrips = 1,
+     Thread=5,
+     keep Scissors,
+     keep Needle/SutureNeedle,
+     keep HuntingKnife/KitchenKnife/FlintKnife/Machete,
+
+     Result:Sling,
+     Sound:ClothesRipping,
+     Time:250.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Double Holster
+  {
+     HolsterSimple=2,
+     Thread=5,
+     keep Scissors,
+     keep Needle/SutureNeedle,
+     keep HuntingKnife/KitchenKnife/FlintKnife/Machete,
+
+     Result:HolsterDouble,
+     Sound:ClothesRipping,
+     Time:300.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Spear
+  {
+     Mop,
+     keep HuntingKnife/KitchenKnife/FlintKnife/Machete,
+
+     Result:SpearCrafted,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Create Bowl
+  {
+     Log,
+     keep HuntingKnife/KitchenKnife/FlintKnife/Machete,
+     keep Axe/HandAxe/AxeStone/WoodAxe,
+
+     Result:Bowl = 5,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Make White Paint
+  {
+    Bleach,
+    WaterPaintbucket,
+    keep MortarPestle,
+
+    Result:PaintWhite,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Red Paint
+  {
+    BerryGeneric1 = 10,
+    WaterPaintbucket,
+    keep MortarPestle,
+
+    Result:PaintRed,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Blue Paint
+  {
+    WaterPaintbucket,
+    BerryBlue/BerryGeneric2 = 10,
+    keep MortarPestle,
+
+    Result:PaintBlue,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Yellow Paint
+  {
+    BerryGeneric3 = 10,
+    WaterPaintbucket,
+    keep MortarPestle,
+
+    Result:PaintYellow,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Orange Paint
+  {
+    WaterPaintbucket,
+    BerryGeneric4 = 10,
+    keep MortarPestle,
+
+    Result:PaintOrange,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Purple Paint
+  {
+    BerryGeneric5 = 10,
+    WaterPaintbucket,
+    keep MortarPestle,
+
+    Result:PaintPurple,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Black Paint
+  {
+    BerryBlack/Charcoal = 10,
+    WaterPaintbucket,
+    keep MortarPestle,
+
+    Result:PaintBlack,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Brown Paint
+  {
+    WaterPaintbucket,
+    keep Shovel/Shovel2,
+    keep MortarPestle,
+
+    Result:PaintBrown,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Cyan Paint
+  {
+    WaterPaintbucket,
+    BerryBlue/BerryGeneric2=5,
+	  BerryPoisonIvy=5,
+    keep MortarPestle,
+
+    Result:PaintCyan,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Green Paint
+  {
+    WaterPaintbucket,
+    BerryBlue/BerryGeneric2 = 5,
+	  BerryGeneric3 = 5,
+    keep MortarPestle,
+
+    Result:PaintGreen,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Gray Paint
+  {
+    WaterPaintbucket,
+    BerryBlack/Charcoal= 5,
+	  BerryPoisonIvy = 5,
+    keep MortarPestle,
+
+    Result:PaintGrey,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Light Blue Paint
+  {
+    WaterPaintbucket,
+    BerryBlue/BerryGeneric2 = 5,
+	  BerryPoisonIvy = 5,
+    keep MortarPestle,
+
+    Result:PaintLightBlue,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Light Brown Paint
+  {
+     WaterPaintbucket,
+     BerryPoisonIvy = 5,
+     keep Shovel/Shovel2,
+     keep MortarPestle,
+
+     Result:PaintLightBrown,
+     Time:300.0,
+     Category:Carpentry,
+  }
+
+	recipe Make Pink Paint
+  {
+    BerryGeneric1 = 5,
+	  BerryPoisonIvy = 5,
+    WaterPaintbucket,
+    keep MortarPestle,
+
+    Result:PaintPink,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+	recipe Make Turquoise Paint
+  {
+    BerryBlue/BerryGeneric2 = 5,
+	  BerryPoisonIvy = 5,
+    WaterPaintbucket,
+    keep MortarPestle,
+
+    Result:PaintTurquoise,
+    Time:300.0,
+    Category:Carpentry,
+  }
+
+  recipe Make Concrete Powder
+  {
+     Stone = 10,
+     keep [Recipe.GetItemTypes.Hammer],
+     keep MortarPestle,
+
+     Result:ConcretePowder,
+     Time:500.0,
+     Category:Carpentry,
+  }
+
+	recipe Make Plaster Powder
+  {
+     Stone = 10,
+     keep [Recipe.GetItemTypes.Hammer],
+     keep MortarPestle,
+
+     Result:PlasterPowder,
+     Time:500.0,
+     Category:Carpentry,
+  }
+
+  recipe Craft Spear
+  {
+     Mop/Broom/Poolcue/ChairLeg/TableLeg/Rake,
+     keep HuntingKnife/KitchenKnife/FlintKnife/Machete,
+
+     Result:SpearCrafted,
+     Sound:Hammering,
+     Time:100.0,
+     Category:Survivalist,
+  }
+
+  recipe Make Handle
+  {
+     Log/ChairLeg/TableLeg,
+     keep Saw/GardenSaw,
+     keep HuntingKnife/KitchenKnife/FlintKnife/Machete,
+
+     Result:Handle,
+     Sound:Sawing,
+     Time:200.0,
+     Category:Carpentry,
+     SkillRequired:Woodwork=3,
+     OnGiveXP:Recipe.OnGiveXP.WoodWork10,
+  }
+
+  recipe Make Baseball Bat
+  {
+     Log,
+     keep Saw/GardenSaw,
+
+     Result:BaseballBat,
+     Sound:Sawing,
+     Time:400.0,
+     Category:Carpentry,
+     SkillRequired:Woodwork=4,
+     OnGiveXP:Recipe.OnGiveXP.WoodWork10,
+  }
+
+	recipe Make Axe
+  {
+     UnusableMetal=3,
+	   Handle=2,
+     keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:Axe,
+     Sound:Hammering,
+     Time:200.0,
+	   SkillRequired:MetalWelding=6,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Hand Axe
+  {
+     UnusableMetal=3,
+     Handle=1,
+     keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:HandAxe,
+     Sound:Hammering,
+     Time:200.0,
+     SkillRequired:MetalWelding=3,
+     Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Crowbar
+  {
+     UnusableMetal=3,
+     keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:Crowbar,
+     Sound:Hammering,
+     Time:200.0,
+  	 SkillRequired:MetalWelding=4,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Shovel
+  {
+     UnusableMetal4,
+  	 Handle=2,
+     keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+
+     Result:Shovel,
+     Sound:Hammering,
+     Time:200.0,
+  	 SkillRequired:MetalWelding=5,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Sledgehammer
+  {
+     UnusableMetal=10,
+  	 Handle=2,
+     keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+
+     Result:Sledgehammer,
+     Sound:Hammering,
+     Time:500.0,
+  	 SkillRequired:MetalWelding=8,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Garden Hoe
+  {
+     UnusableMetal=3,
+  	 Handle=2,
+     keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:GardenHoe,
+     Sound:Hammering,
+     Time:200.0,
+  	 SkillRequired:MetalWelding=4,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Hammer
+  {
+     UnusableMetal=2,
+  	 Handle=1,
+     keep [Recipe.GetItemTypes.Hammer],
+  	 keep BlowTorch,
+
+     Result:Hammer,
+     Sound:Hammering,
+     Time:200.0,
+  	 SkillRequired:MetalWelding=2,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Metal Bar
+  {
+     UnusableMetal=4,
+  	 keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:MetalBar,
+     Sound:Hammering,
+     Time:200.0,
+  	 SkillRequired:MetalWelding=2,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Metal Pipe
+  {
+     UnusableMetal=4,
+  	 keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:MetalPipe,
+     Sound:Hammering,
+     SkillRequired:MetalWelding=1,
+     Time:200.0,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Pipe Wrench
+  {
+     UnusableMetal=4,
+  	 keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:PipeWrench,
+     Sound:Hammering,
+  	 SkillRequired:MetalWelding=2,
+     Time:200.0,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Katana
+  {
+     UnusableMetal=8,
+     Handle=1,
+  	 keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:Katana,
+     Sound:Hammering,
+  	 SkillRequired:MetalWelding=9,
+     Time:600.0,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Machete
+  {
+     UnusableMetal=4,
+     Handle=1,
+  	 keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:Machete,
+     Sound:Hammering,
+  	 SkillRequired:MetalWelding=6,
+     Time:400.0,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Hunting Knife
+  {
+     UnusableMetal=2,
+     Handle=1,
+  	 keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:HuntingKnife,
+     Sound:Hammering,
+  	 SkillRequired:MetalWelding=5,
+     Time:200.0,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Cleaver
+  {
+     UnusableMetal=3,
+     Handle=1,
+  	 keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:MeatCleaver,
+     Sound:Hammering,
+  	 SkillRequired:MetalWelding=4,
+     Time:200.0,
+  	 Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+
+  recipe Make Kitchen Knife
+  {
+     UnusableMetal=1,
+     Handle=1,
+     keep BlowTorch,
+     keep [Recipe.GetItemTypes.Hammer],
+
+     Result:KitchenKnife,
+     Sound:Hammering,
+     SkillRequired:MetalWelding=2,
+     Time:200.0,
+     Category:Survivalist,
+     OnGiveXP:Recipe.OnGiveXP.MetalWelding10,
+  }
+}
