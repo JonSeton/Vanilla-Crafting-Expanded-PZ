@@ -5,3 +5,12 @@
 - Expanded Crafting Recipes: Adds numerous new recipes to craft items commonly used in Project Zomboid, enhancing the crafting system while maintaining game balance.
 
 - Realistic Integration: Crafting additions are designed to fit seamlessly into the game's existing mechanics, providing a more immersive experience.
+
+📊 Stats
+| Metric                      | Value    |
+| --------------------------- | -------- |
+| ⬇️ **Current Subscribers**  | 90,000+  |
+| ⬇️ **All-Time Unique Subs** | 180,000+ |
+| 👍 **Total Ratings**        | 500+     |
+| 🏆 **Total Favorites**      | 3,500+   |
+| ⭐ **Overall Rating**        | ⭐⭐⭐⭐⭐    |
